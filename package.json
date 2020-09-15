@@ -1,0 +1,32 @@
+{
+  "name": "batchparseqr",
+  "version": "1.0.0",
+  "description": "batch parse QR file",
+  "main": "index.js",
+  "scripts": {
+    "star": "node test/batchParaseQR.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/liyinchigithub/BatchParseQR.git"
+  },
+  "keywords": [
+    "QR",
+    "parse"
+  ],
+  "author": "liyinchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liyinchigithub/BatchParseQR/issues"
+  },
+  "homepage": "https://github.com/liyinchigithub/BatchParseQR#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jimp": "^0.16.1",
+    "log4js": "^6.3.0",
+    "mocha": "^8.1.3",
+    "path": "^0.12.7",
+    "qrcode": "^1.4.4",
+    "qrcode-reader": "^1.0.4"
+  }
+}
