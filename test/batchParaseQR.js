@@ -54,7 +54,12 @@ var getFiles = {
                         } else {
                             logger.info("解析结果：",`${element.replace("image/","")} => ${result.result}`); //结果
                             // 三、写入txt文本中
-                            
+                            fs.writeFile("output.txt",`${element.replace("image/","")},${result.result}\n`,{flag:"a"},function (err) {
+                                if(err){
+                                    return logger.error(err);
+                                }
+                                // logger.info("写入成功");
+                            })
                         }
                     };
                     decodeQR.decode(image.bitmap);
